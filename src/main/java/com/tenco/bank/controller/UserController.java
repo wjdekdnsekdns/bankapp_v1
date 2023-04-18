@@ -90,4 +90,9 @@ public class UserController {
 		
 		return "redirect:/account/list";
 	}
+	@GetMapping("/logout")
+	public String logout() {
+		session.invalidate();
+		return "redirect:/user/sign-in";
+	}
 }
