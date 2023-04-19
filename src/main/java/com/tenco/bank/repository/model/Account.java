@@ -2,11 +2,14 @@ package com.tenco.bank.repository.model;
 
 import java.sql.Timestamp;
 
+import lombok.Data;
+
 /**
  * 
  *  모델 클래스 (value Object 역할만 하는것은 아니다)
  *
  */
+@Data
 public class Account {
 
 	private Integer id;
