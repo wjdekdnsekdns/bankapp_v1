@@ -6,5 +6,5 @@ import lombok.Data;
 public class DepositFormDto {
 
 	private Long amount;
-	private String dAccountNouber;
+	private String dAccountNumber;
 }
