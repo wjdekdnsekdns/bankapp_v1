@@ -21,10 +21,10 @@ public class HistoryDto {
 		return TImestampUtil.timestampToString(createdAt);
 	}
 	
-	public String formatBalance() {
+	public String formatMoney(Long money) {
 		
 		DecimalFormat df = new DecimalFormat("#,###");
-		String formatNumber = df.format(balance);
+		String formatNumber = df.format(money);
 		return formatNumber + "원";
 	}
 }
